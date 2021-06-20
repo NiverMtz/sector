@@ -1,0 +1,26 @@
+@import url(../css/wrapper-baner.css);
+@import url(../css/header.css);
+@import url(../css/banner.css);
+@import url(../css/wrapper.css);
+
+:root {
+    --fontBase: 'Poppins', sans-serif;
+    --headline1: 88px/100px var(--fontBase);
+    --headline2: 64px/96px var(--fontBase);
+    --body1Bold: bold 18px/32px var(--fontBase);
+    --body1Medium: medium 18px/32px var(--fontBase);
+    --body1Regular: 18px/32px var(--fontBase);
+    --button: bold 18px/27px var(--fontBase);
+    --yellow: #FDD130;
+    --darkgreen: #0B1D26;
+    --white: #FFFFFF;
+
+}
+
+body {
+    background: var(--darkgreen);
+    min-block-size: 100vh;
+    font: var(--body1Regular);
+    color: var(--darkgreen);
+    margin: 0;
+}
