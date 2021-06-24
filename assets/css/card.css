@@ -1,0 +1,12 @@
+.card img {
+    width: 100%;
+}
+
+.card-number {
+    color: white;
+}
+
+.card-title {
+    color: white;
+    text-transform: uppercase;
+}

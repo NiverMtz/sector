@@ -23,15 +23,20 @@
     }
 
     .banner-icons {
-        display: flex;
-        flex-direction: column;
+        display: none;
     }
 
     .banner-description {
         display: block;
         width: 950px;
+        height: 500px;
         font: var(--headline1);
         font-weight: 500;
+    }
+
+    .banner-description p {
+        margin-block-start: 0;
+        margin-block-end: 0;
     }
 
     .banner-menu {
@@ -48,14 +53,31 @@
     }
 
     .banner-menu li {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
         height: 60px;
         text-align: right;
-        vertical-align: center;
     }
 
     .banner-menu a {
         text-decoration: none;
         font: var(--button);
         color: var(--darkgreen);
+    }
+
+    .banner-menu ul::before{
+        content: "";
+        position: absolute;
+        height: 80px;
+        width: 74px;
+        border-right: 3px solid var(--darkgreen);
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    .banner-icons {
+        display: flex;
+        flex-direction: column;
     }
 }

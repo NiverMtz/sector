@@ -1,15 +1,19 @@
 .wrapper-banner {
-    /* background:  linear-gradient(to top, var(--darkgreen) 12%, transparent 70%), url(../img/MG.png) no-repeat center top;
-    background-origin: border-box;
-    height: 1077px; */
-
     padding-inline-end: 24px;
     padding-inline-start: 24px;
     margin: 0;
+    background:  linear-gradient(to top, var(--darkgreen) 12%, transparent 70%), url(../img/MG.png) no-repeat center top;
+    background-origin: border-box;
+    height: 1077px;
+    background-size: cover;
 }
 
 @media screen and (min-width: 768px) {
     .wrapper-banner {
+        max-inline-size: 1760px;
+        padding-inline-end: 80px;
+        padding-inline-start: 80px;
+        margin: auto;
         background:  linear-gradient(to top, var(--darkgreen) 0%, transparent 70%), url(../img/MG.png) no-repeat center top;
         height: 1900px;
         background-size: cover;
