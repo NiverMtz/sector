@@ -1,0 +1,33 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.footer-logo p {
+    color: rgb(255, 255, 255, .5);
+}
+
+.footer-info dt, .footer-about dt{
+    color: var(--yellow);
+    text-transform: uppercase;
+    font: 24px/32px var(--fontBase);
+    font-weight: 700;
+}
+
+.footer-info dl, .footer-about dl{
+    color: var(--white);
+}
+
+.footer-about {
+    margin-block-end: 70px;
+}
+
+@media screen and (min-width: 1024px) {
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
