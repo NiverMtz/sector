@@ -8,6 +8,13 @@
     color: rgb(255, 255, 255, .5);
 }
 
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+
 .footer-info dt, .footer-about dt{
     color: var(--yellow);
     text-transform: uppercase;
@@ -15,19 +22,27 @@
     font-weight: 700;
 }
 
-.footer-info dl, .footer-about dl{
+.footer-info dl a, .footer-about dl a{
     color: var(--white);
+    text-decoration: none;
 }
 
 .footer-about {
-    margin-block-end: 70px;
+    margin-block-end: 88px;
 }
 
 @media screen and (min-width: 1024px) {
     .footer {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
+        margin-block-end: 120px;
+    }    
+
+    .footer-links {
+        display: flex;
+        flex-direction: row;
+        gap: 158px;
     }
 }
 

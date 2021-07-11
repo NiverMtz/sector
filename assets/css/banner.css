@@ -23,7 +23,19 @@
     }
 
     .banner-icons {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        margin-inline-end: 22px;
+    }
+
+    .banner-description::before {
+        content: "";
+        width: 72px;
+        height: 2px;
+        background-color: var(--yellow);
+        position: absolute;
+        margin-block-start: -20px;
     }
 
     .banner-description {
@@ -32,6 +44,7 @@
         height: 500px;
         font: var(--headline1);
         font-weight: 500;
+        margin-block-start: 20px;
     }
 
     .banner-description p {
@@ -72,12 +85,5 @@
         height: 80px;
         width: 74px;
         border-right: 3px solid var(--darkgreen);
-    }
-}
-
-@media screen and (min-width: 1350px) {
-    .banner-icons {
-        display: flex;
-        flex-direction: column;
     }
 }

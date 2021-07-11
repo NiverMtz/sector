@@ -6,11 +6,24 @@
     margin-top: -48px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
     .wrapper {
-        max-inline-size: 1760px;
+        margin-top: -450px;
         padding-inline-end: 80px;
         padding-inline-start: 80px;
-        margin: auto;
+    }
+}
+
+@media (min-width: 1600px) {
+    .wrapper {
+        padding-inline-end: 150px;
+        padding-inline-start: 150px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .wrapper {
+        padding-inline-end: 299px;
+        padding-inline-start: 299px;
     }
 }
